@@ -32,8 +32,11 @@
             android:text="@string/the_auction_network"
             android:textColor="@android:color/black"
             android:layout_centerHorizontal="true"
-            android:textSize="40sp"
-            android:layout_width="wrap_content"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textAlignment="gravity"
+            android:gravity="center"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
 
     </RelativeLayout>
@@ -56,8 +59,11 @@
             android:layout_height="150dp" />
 
         <EditText
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/white"
             android:textSize="14sp"
+            android:backgroundTint="@android:color/white"
+            android:textColorHint="@color/colorHint"
+            android:shadowColor="@android:color/white"
             android:hint="Username"
             android:autofillHints="Username"
             android:inputType="text"
@@ -65,8 +71,11 @@
             android:layout_alignTop="@id/iv1"
             android:layout_marginTop="55dp"
             android:layout_marginStart="50dp"
-            android:layout_width="300dp"
             android:importantForAutofill="yes"
+            android:layout_alignStart="@id/iv1"
+            android:layout_alignEnd="@id/iv1"
+            android:layout_marginEnd="55dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageView
@@ -81,16 +90,22 @@
             android:layout_height="150dp" />
 
         <EditText
-            android:textColor="@color/colorPrimary"
+            android:textColor="@android:color/white"
             android:textSize="14sp"
             android:hint="Password"
+            android:textColorHint="@color/colorHint"
+            android:shadowColor="@android:color/white"
+            android:backgroundTint="@android:color/white"
             android:id="@+id/tb_password"
             android:importantForAutofill="no"
             android:inputType="textPassword"
             android:layout_alignTop="@id/iv2"
             android:layout_marginTop="55dp"
             android:layout_marginStart="50dp"
-            android:layout_width="300dp"
+            android:layout_marginEnd="55dp"
+            android:layout_alignEnd="@id/iv2"
+            android:layout_alignStart="@id/iv2"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
         <ImageButton
@@ -101,7 +116,7 @@
             android:layout_below="@id/iv2"
             android:layout_centerHorizontal="true"
             android:onClick="Submit_clicked"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_width="150dp"
             android:layout_height="60dp" />
 
@@ -110,11 +125,13 @@
             android:layout_alignStart="@id/submit_button_image"
             android:text="@string/submit"
             android:textSize="36sp"
+            android:textColor="@android:color/background_dark"
             android:onClick="Submit_clicked"
             android:layout_marginTop="5sp"
             android:layout_marginStart="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
+
     </RelativeLayout>
 
 </RelativeLayout>
